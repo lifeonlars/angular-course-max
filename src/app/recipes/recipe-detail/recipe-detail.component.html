@@ -5,7 +5,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>{{recipe.name}}</h1>
+    <h1>{{recipe.name}} {{id}}</h1>
   </div>
 </div>
 <div class="row">
@@ -15,9 +15,9 @@
         Manage Recipe <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a (click)="onAddToShoppingList()" style="cursor: pointer">To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li><a (click)="onAddToShoppingList()" class="link">To Shopping List</a></li>
+        <li><a class="link" [routerLink]="['edit']">Edit Recipe</a></li>
+        <li><a class="link">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
